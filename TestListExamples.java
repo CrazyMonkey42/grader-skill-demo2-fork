@@ -13,10 +13,10 @@ public class TestListExamples {
 
   @Test(timeout = 500)
   public void testMergeRightEnd() {
-    List<String> left = Arrays.asList("a", "c", "e");
+    List<String> left = Arrays.asList("a", "b", "e");
     List<String> right = Arrays.asList("b", "h");
     List<String> merged = ListExamples.merge(left, right);
-    List<String> expected = Arrays.asList("a", "b", "c", "e", "h");
+    List<String> expected = Arrays.asList("a", "b", "b", "e", "h");
     assertEquals(expected, merged);
   }
 
